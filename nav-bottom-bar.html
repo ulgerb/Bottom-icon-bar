@@ -9,27 +9,30 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'poppins', sans-serif;
         }
-        :root{
-            --clr: #222327;
+
+        :root {
+            --del: #222222;
         }
-        body{
+
+        body {
             padding: 0;
             margin: 0;
-            background: #222327;
+            background: #222222;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .nav-bottom{
+
+        .nav-bottom {
             width: 440px;
             height: 70px;
-            background: white ;
+            background: white;
             position: absolute;
             /* left: 0%; */
             bottom: 30%;
@@ -37,39 +40,43 @@
             justify-content: center;
             align-items: center;
             border-radius: 10px;
-            
+
             /* border-top-right-radius: 10px; */
-            
+
         }
-        
-        .nav-bottom-icon{
+
+        .nav-bottom-icon {
             width: 500px;
             position: relative;
             display: flex;
             justify-content: center;
-            
+
             align-items: center;
         }
+
         .material-symbols-outlined {
             font-size: 30px !important;
             font-variation-settings:
-            'FILL' 1,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 48
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
         }
-        .nav-bottom-icon ul{
+
+        .nav-bottom-icon ul {
             display: flex;
             width: 400px;
-            
+
         }
-        .nav-bottom-icon ul li{
+
+        .nav-bottom-icon ul li {
             position: relative;
             list-style: none;
             width: 70%;
             height: 70px;
         }
-        .nav-bottom-icon ul li a{
+
+        .nav-bottom-icon ul li a {
             position: relative;
             display: flex;
             justify-content: center;
@@ -80,7 +87,8 @@
             font-weight: 500;
             text-decoration: none;
         }
-        .nav-bottom-icon ul li a .icon{
+
+        .nav-bottom-icon ul li a .icon {
             position: relative;
             display: block;
             line-height: 75px;
@@ -88,31 +96,35 @@
             justify-content: center;
             text-align: center;
             transition: 0.5s;
-            color: var(--clr);
+            color: var(--del);
             z-index: 1;
-            
+
         }
-        .nav-bottom-icon ul li.active a .icon{
+
+        .nav-bottom-icon ul li.active a .icon {
             transform: translateY(-34px);
-            
+
         }
-        .nav-bottom-icon ul li a .text{
+
+        .nav-bottom-icon ul li a .text {
             position: absolute;
-            color: var(--clr);
+            color: var(--del);
             font-weight: normal;
             font-style: 75em;
             letter-spacing: 0.05em;
             transition: 0.5s;
             opacity: 0;
             transform: translateY(20px);
-            
+
         }
-        .nav-bottom-icon ul li.active a .text{
+
+        .nav-bottom-icon ul li.active a .text {
             opacity: 1;
             transform: translateY(10px);
-            
+
         }
-        .inde-home{
+
+        .inde-home {
             position: absolute;
             top: 0%;
             left: 1%;
@@ -121,55 +133,61 @@
             border-radius: 50%;
             transition: 0.5s;
         }
-        .indicator{
+
+        .indicator {
             position: absolute;
             top: -45%;
-            left: 15px;
+            left: 25px;
             width: 70px;
             height: 70px;
-            background: cornflowerblue;
+            background: royalblue;
             border-radius: 50%;
-            border: 6px solid var(--clr);
+            border: 6px solid var(--del);
             transition: 0.5s;
         }
-        .indicator_radius_left{
+
+        .indicator_radius_left {
             /* content: ' '; */
             width: 20px;
             height: 25px;
             /* background: rgb(198, 33, 33); */
             position: absolute;
             border-top-right-radius: 100%;
-            box-shadow: 0px -11px 0px 0px var(--clr);
+            box-shadow: 0px -11px 0px 0px var(--del);
             top: 25.5px;
             left: -22.4px;
         }
-        
-        .indicator_radius_right{
+
+        .indicator_radius_right {
             /* content: ' '; */
             width: 20px;
             height: 25px;
             /* background: rgb(198, 33, 33); */
             position: absolute;
             border-top-left-radius: 100%;
-            box-shadow: 0px -11px 0px 0px var(--clr);
+            box-shadow: 0px -11px 0px 0px var(--del);
             top: 25.5px;
             left: 60.4px;
         }
 
 
-        .nav-bottom-icon ul li:nth-child(2).active ~ .indicator{
+        .nav-bottom-icon ul li:nth-child(1).active~.indicator {
             left: 25px;
         }
-        .nav-bottom-icon ul li:nth-child(3).active ~ .indicator{
+
+        .nav-bottom-icon ul li:nth-child(2).active~.indicator {
             left: 105px;
         }
-        .nav-bottom-icon ul li:nth-child(4).active ~ .indicator{
+
+        .nav-bottom-icon ul li:nth-child(3).active~.indicator {
             left: 185px;
         }
-        .nav-bottom-icon ul li:nth-child(5).active ~ .indicator{
+
+        .nav-bottom-icon ul li:nth-child(4).active~.indicator {
             left: 265px;
         }
-        .nav-bottom-icon ul li:nth-child(6).active ~ .indicator{
+
+        .nav-bottom-icon ul li:nth-child(5).active~.indicator {
             left: 345px;
         }
     </style>
@@ -179,71 +197,71 @@
     <nav class="nav-bottom">
         <div class="nav-bottom-icon">
             <ul class="hos home">
-                <div class="inde-home"></div>
-
-                    <li class="list active">
-                        <a href="#" >
-                            <span class="icon material-symbols-outlined">
-                                home
-                            </span>
-                            <span class="text">Anasayfa</span>
-                        </a>
-                    </li>
-                    
-                    <li class="list ">
-                        <a href="#" >
-                            <span class="icon fa fa-search">
-                                
-                            </span>
-                            <span class="text">Ara</span>
-                        </a>
-                    </li>
-                    
-                    <li class="list ">
-                        <a href="#" >
-                            <span class="icon material-symbols-outlined">
-                                movie_filter
-                            </span>
-                            <span class="text">Reels</span>
-                        </a>
-                    </li>
-                    
-                    <li class="list ">
-                        <a href="#" >
-                            <span class="icon fa fa-shopping-bag">
-                                
-                            </span>
-                            <span class="text">Phone</span>
-                        </a>
-                    </li>
-                    
-                    <li class="list ">
-                        <a href="#" >
-                            <span class="icon fa fa-user">
-                                
-                            </span>
-                            <span class="text">Setting</span>
-                        </a>
-                    </li>
-                    <div class="indicator">
-                        <div class="indicator_radius_left"></div>
-                        <div class="indicator_radius_right"></div>
-                    </div>
-                    
+    
+    
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon material-symbols-outlined">
+                            home
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+    
+                <li class="list ">
+                    <a href="#">
+                        <span class="icon fa fa-search">
+    
+                        </span>
+                        <span class="text">Search</span>
+                    </a>
+                </li>
+    
+                <li class="list ">
+                    <a href="#">
+                        <span class="icon material-symbols-outlined">
+                            movie_filter
+                        </span>
+                        <span class="text">Reels</span>
+                    </a>
+                </li>
+    
+                <li class="list ">
+                    <a href="#">
+                        <span class="icon fa fa-shopping-bag">
+    
+                        </span>
+                        <span class="text">Shopping</span>
+                    </a>
+                </li>
+    
+                <li class="list ">
+                    <a href="#">
+                        <span class="icon fa fa-user">
+    
+                        </span>
+                        <span class="text">Profil</span>
+                    </a>
+                </li>
+                <div class="indicator">
+                    <div class="indicator_radius_left"></div>
+                    <div class="indicator_radius_right"></div>
                 </div>
+    
+    
             </ul>
         </div>
     </nav>
 
     <script>
         const list = document.querySelectorAll('.list');
-        function activelist(){
+        function activelist() {
             list.forEach((item) =>
-            item.classList.remove('active'));
+                item.classList.remove('active'));
             this.classList.add('active');
         }
         list.forEach((item) =>
-        item.addEventListener('click',activelist));
+            item.addEventListener('click', activelist));
     </script>
 </body>
 </html>

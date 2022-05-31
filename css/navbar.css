@@ -6,13 +6,13 @@
 }
 
 :root {
-    --clr: #222327;
+    --del: #222222;
 }
 
 body {
     padding: 0;
     margin: 0;
-    background: #222327;
+    background: #222222;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +85,7 @@ body {
     justify-content: center;
     text-align: center;
     transition: 0.5s;
-    color: var(--clr);
+    color: var(--del);
     z-index: 1;
 
 }
@@ -97,7 +97,7 @@ body {
 
 .nav-bottom-icon ul li a .text {
     position: absolute;
-    color: var(--clr);
+    color: var(--del);
     font-weight: normal;
     font-style: 75em;
     letter-spacing: 0.05em;
@@ -129,9 +129,9 @@ body {
     left: 25px;
     width: 70px;
     height: 70px;
-    background: cornflowerblue;
+    background: royalblue;
     border-radius: 50%;
-    border: 6px solid var(--clr);
+    border: 6px solid var(--del);
     transition: 0.5s;
 }
 
@@ -142,7 +142,7 @@ body {
     /* background: rgb(198, 33, 33); */
     position: absolute;
     border-top-right-radius: 100%;
-    box-shadow: 0px -11px 0px 0px var(--clr);
+    box-shadow: 0px -11px 0px 0px var(--del);
     top: 25.5px;
     left: -22.4px;
 }
@@ -154,7 +154,7 @@ body {
     /* background: rgb(198, 33, 33); */
     position: absolute;
     border-top-left-radius: 100%;
-    box-shadow: 0px -11px 0px 0px var(--clr);
+    box-shadow: 0px -11px 0px 0px var(--del);
     top: 25.5px;
     left: 60.4px;
 }
