@@ -12,7 +12,7 @@ img[title="thumbnail"] {
 img[alt$="-thumbnail"]{
     width:300px;
 }
-![img]((https://user-images.githubusercontent.com/98836519/172958066-b2b6abb2-10cd-4236-894d-c2f3b3335435.jpg)#thumbnail) <!-- src = link#thumbnail -->
+![img]((src=https://user-images.githubusercontent.com/98836519/172958066-b2b6abb2-10cd-4236-894d-c2f3b3335435.jpg)#thumbnail) <!-- src = link#thumbnail -->
 ![img]((https://user-images.githubusercontent.com/98836519/172958066-b2b6abb2-10cd-4236-894d-c2f3b3335435.jpg) "thumbnail") <!-- title = thumbnail -->
 ![img -thumbnail]((https://user-images.githubusercontent.com/98836519/172958066-b2b6abb2-10cd-4236-894d-c2f3b3335435.jpg)) <!-- alt = img -thumbnail -->
 
