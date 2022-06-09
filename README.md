@@ -1,6 +1,20 @@
 # Bottom-icon-bar
 +icon +bar +menu +navbar
 
-[[https://user-images.githubusercontent.com/98836519/172956191-850ebb0f-3e5f-4d9e-961f-b70e846db798.jpg |width=400px]]
 
-![bottom-icon-bar](https://user-images.githubusercontent.com/98836519/172956872-5dec1dfa-6356-432e-a794-013d94909247.gif)
+img[src*="#thumbnail"] {
+   width:150px;
+   height:100px;
+}
+img[title="thumbnail"] {
+   width:200px;
+}
+img[alt$="-thumbnail"]{
+    width:300px;
+}
+![img]([link](https://user-images.githubusercontent.com/98836519/172958066-b2b6abb2-10cd-4236-894d-c2f3b3335435.jpg)#thumbnail) <!-- src = link#thumbnail -->
+![img]([link](https://user-images.githubusercontent.com/98836519/172958066-b2b6abb2-10cd-4236-894d-c2f3b3335435.jpg) "thumbnail") <!-- title = thumbnail -->
+![img -thumbnail]([link](https://user-images.githubusercontent.com/98836519/172958066-b2b6abb2-10cd-4236-894d-c2f3b3335435.jpg)) <!-- alt = img -thumbnail -->
+
+![bottom-icon-bar](https://user-images.githubusercontent.com/98836519/172958063-ddcaef69-527e-49f2-ae55-570450801f2b.gif)
+![home](https://user-images.githubusercontent.com/98836519/172958066-b2b6abb2-10cd-4236-894d-c2f3b3335435.jpg)
